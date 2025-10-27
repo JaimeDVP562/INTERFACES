@@ -1,0 +1,71 @@
+/*
+. --> Clase
+# --> ID
+[] --> Atributo
+
+
+*/
+
+body {}
+
+h1 {
+    color: greenyellow;
+}
+
+h2 {
+    color: greenyellow;
+}
+
+.tittle {
+    background-color: aqua;
+}
+
+[href] {
+    font-size: 125%;
+}
+
+[tittle="Website"][href*="alan"] {
+    background-color: green;
+    color: white;
+}
+
+[href$=".pdf"] {
+    background-color: yellow;
+}
+
+[tittle|="Web"][href*="alan"] {
+    background-color: green;
+    color: white;
+}
+
+input {
+    padding: 15px;
+}
+
+input:focus {
+    background-color: green;
+    color: white;
+
+}
+
+input:hover {
+    background-color: lightgreen;
+    color: white;
+}
+
+.container div:nth-child(odd) {
+    color: darkorange;
+}
+
+.container div:last-child {
+    color: blue;
+}
+div p{
+    background-color: brown;
+}
+p{
+background-color: green;
+}
+p{
+    background-color: grey;
+}
