@@ -1,0 +1,86 @@
+body {
+    background-image: url('images/mejores-parques-de-atracciones.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Aplicar difuminado directo a la imagen de fondo */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/mejores-parques-de-atracciones.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px) brightness(0.7);
+    z-index: -1;
+}
+
+
+header {
+    background-color: #b0d1b1;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+    font-family: Arial, sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.nav div{
+    display: flex;
+    justify-content: flex-start;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Estilos para las cajas que contendrán las imágenes */
+.caja1 {
+    width: 150px;
+    height: 200px;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efecto hover para agrandar la caja */
+.caja1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos específicos para todas las imágenes */
+.caja1 img {
+    object-position: center;
+    display: block;
+}
